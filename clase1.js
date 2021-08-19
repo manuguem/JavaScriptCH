@@ -1,21 +1,17 @@
-var nombre = "Manuel";
-
-var apellido = "Guerra";
-
-var nombreCompleto = "Manuel Guerra";
-
 const currentYear = 2021;
 
-var textoIngresado = prompt("Ingrese nombre:");
+var nombreIngresado = prompt("Ingrese nombre:");
 
-console.log("Hola: ",textoIngresado,"!");
+console.log("Hola: ", textoIngresado, "!");
 
-var bienvenida = "Bienvenido a la clase"+" "+textoIngresado;
+var bienvenida = "Bienvenido/a a mi primer desafío de JavaScript" + " " + nombreIngresado;
 
 alert(bienvenida);
 
-var year= prompt("Ingrese año de nacimiento: ");
+var year = prompt("Ingrese año de nacimiento: "), textoIngresado;
 
 var edad = currentYear - parseInt(year);
 
-alert(edad);
+var msgedad = "Tu edad es" + " " + edad + " " + nombreIngresado;
+
+alert(msgedad);
