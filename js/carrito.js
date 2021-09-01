@@ -1,7 +1,7 @@
 let sumaTotal = 0;
 
-const sumar = x => sumaTotal = sumaTotal + x;
-const damePrecio = (producto) => {
+const suma = x => sumaTotal = sumaTotal + x;
+const acumPrecio = (producto) => {
 
     switch (producto) {
         case "Fuente Modular 500w EVGA":
@@ -26,8 +26,8 @@ let dato = "";
 do {
     dato = prompt("Ingrese producto:");
     
-    precio = damePrecio(dato);
-    sumar(precio);
+    precio = acumPrecio(dato);
+    suma(precio);
 
     console.log(sumaTotal);
 
