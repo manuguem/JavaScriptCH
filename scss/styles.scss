@@ -1,0 +1,34 @@
+@import "../scss/layout/header";
+
+@import "../scss/layout/main";
+
+@import "../scss/layout/footer";
+
+@import "../scss/base/typo";
+
+@import "../scss/utilities/mixins";
+
+@import "../scss/components/bootstrap";
+
+@import "../scss/utilities/variables";
+
+@import "../bootstrap-5.0.2-dist/css/bootstrap.min.css";
+
+body {
+    background-color: $principal_color;
+    height: auto;
+    main {
+        @include flexBoxGuide(relative,flex,center,$principal_color,0 auto,50%,center,white,auto);
+    }
+
+         footer {
+        background-color: rgb(8, 8, 8);
+        font-family: $principal_font;
+        a {
+            text-decoration: none;
+        }
+
+}
+
+
+}

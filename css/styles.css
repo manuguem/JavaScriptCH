@@ -1,0 +1,90 @@
+@import url(../bootstrap-5.0.2-dist/css/bootstrap.min.css);
+header {
+  color: white;
+  font-family: 'Khula', sans-serif;
+  font-size: 1.2rem;
+  height: 7.5rem;
+  text-align: center;
+  background-color: #161616; }
+  header p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0px 20px rgba(0, 0, 0, 0.753);
+    font-style: italic;
+    color: white;
+    position: relative;
+    top: -0.3rem; }
+  header nav .form-control4 {
+    padding: 0.3rem;
+    width: 42rem;
+    margin-left: 18rem;
+    position: absolute;
+    background: #232323;
+    border: none;
+    color: white; }
+    header nav .form-control4 .navbar {
+      width: auto;
+      background: #131313;
+      color: white;
+      height: 6.5rem;
+      font-size: larger;
+      text-align: center;
+      text-decoration: none; }
+  header nav p {
+    margin-top: 1rem;
+    position: absolute; }
+  header nav button {
+    position: relative;
+    border: none;
+    outline: none;
+    margin-right: 8.5rem;
+    background: transparent; }
+
+main {
+  padding-bottom: 2rem; }
+
+footer {
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 23rem; }
+  footer div {
+    display: grid;
+    grid-template-columns: repeat(5, 5rem);
+    grid-template-rows: repeat(1, 5rem);
+    padding-top: 0.5rem;
+    grid-gap: 4rem;
+    color: white;
+    margin-left: 20rem; }
+    footer div p {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 2rem;
+      text-shadow: 0 0px 20px rgba(0, 0, 0, 0.753);
+      font-style: italic;
+      color: white;
+      margin-top: 10rem;
+      position: relative;
+      top: 0.6rem;
+      left: -0.5rem; }
+
+body {
+  background-color: black;
+  height: auto; }
+  body main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    color: white;
+    height: auto; }
+  body footer {
+    background-color: #080808;
+    font-family: "Khula", sans-serif; }
+    body footer a {
+      text-decoration: none; }

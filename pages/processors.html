@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCSTUFF | Procesadores</title>
+    <link rel="shortcut icon" href="../img/logos/tejon (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="backgroundColor khula">
+    <div class="khulaHeader">
+        <p>¡Únete a la mejor experiencia de compra y ensamblados de PC!⚡</p>
+    </div>
+    <header class="bg-khulaHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logos/PCSTUFF logo.PNG" alt="PCSTUFF logo" class="align-items-lg-start">
+                    <p class="imgtextLogoPosition">PCSTUFF</p>
+                </a>
+                <input class="form-control4 me-2" type="text" placeholder="Buscar" aria-label="Search">
+               <button class="btn4 btn-primary2 img-fluid"><img src="../img/logos/magnifying-glass.png" alt="Lupa de búsqueda"></button>
+            </div>
+            <button class="btn2 btn-primary2">
+                <img src="../img/logos/carrito-de-compras.png" alt="carrito-de-compras">
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/pcarmadas.html">Pc's
+                                Armadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/guide.html">GPU Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/table.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="buttonContact">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Mi cuenta
+                                </a>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Mi cuenta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">&times;</button>
+                                        </div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email
+                                                    address</label>
+                                                <input type="email" class="form-control justify-content-center"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                                <a href="">
+                                                    <div id="emailHelp" class="form-text">¿Olvidaste tu contraseña?
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="loginButton">
+                                                <button type="submit" class="loginButton">Ingresar</button>
+                                            </div><br>
+                                            <div class="accountFacebook">
+                                                <img src="../img/logos/facebook1.png" alt="Facebook logo"><a
+                                                    href="https://www.facebook.com/">Continuar con
+                                                    Facebook</a>
+                                            </div><br>
+                                            <div class="accountGoogle">
+                                                <img src="../img/logos/google-mas.png" alt="Google+ logo"><a
+                                                    href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">Continuar
+                                                    con Google</a>
+                                            </div><br>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- SUBNAVBAR -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="nav-link" aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a href="../pages/processors.html">Procesadores</a>
+                                <li><a href="../pages/motherboards.html">Motherboards</a>
+                                <li><a href="../pages/videocards1.html">Tarjetas de vídeo</a>
+                                <li><a href="../pages/RAMs.html">RAMs</a>
+                                <li><a href="../pages/coolers.html">Refrigeración</a>
+                                <li><a href="../pages/monitors.html">Monitores</a>
+                                <li><a href="../pages/SSD.html">SSD/NVME</a>
+                                <li><a href="../pages/HDD.html">HDD</a>
+                                <li><a href="../pages/power-supply.html">Fuentes de poder</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        </nav>
+        </div>
+    </header><br>
+    <main>
+        <div class="processorGrid khula hide-desktop">
+            <aside class="asidegrid2">
+                <h2 class="khulaYellow">Procesadores</h2><br>
+                <p class="fontSizeIntel">Marca</p><br>
+                <a href="">
+                    <p>AMD</p>
+                </a>
+                <a href="">
+                    <p>Intel</p>
+                </a><br>
+                <p class="fontSizeIntel">Generación</p><br>
+                <a href="">
+                    <a href="">
+                        <p>Athlon</p>
+                    </a>
+                    <a href="">
+                        <p>Celeron</p>
+                    </a>
+                    <p>Core i3</p>
+                </a>
+                <a href="">
+                    <p>Core i5</p>
+                </a>
+                <a href="">
+                    <p>Core i7</p>
+                </a>
+                <a href="">
+                    <p>Core i9</p>
+                </a>
+                <a href="">
+                    <p>Ryzen 3</p>
+                </a>
+                <a href="">
+                    <p>Ryzen 5</p>
+                </a>
+                <a href="">
+                    <p>Ryzen 9</p>
+                </a>
+            </aside>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/corei7unlocked.png"
+                        alt="Procesador Core i7 intel Desbloqueado">
+                    <p>Core i7 Unlocked</p><br>
+                </a>
+                <h5>$40500</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/Corei9Unlocked.png"
+                        alt="Procesador Core i9 intel Desbloqueado">
+                    <p>Core i9 Unlocked</p><br>
+                </a>
+                <h5>$67500</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/Ryzen52400G.png"
+                        alt="AMD Ryzen 5 2400G Gráficos Integrados Vega 8">
+                    <p>AMD Ryzen 5 2400G Gráficos Integrados Vega 8</p><br>
+                </a>
+                <h5>$38999</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><a href=""><img
+                            src="../img/imagenes/amdathlon.png" alt="AMD Athlon con gráficos integrados">
+                        <p>AMD Athlon con gráficos integrados</p><br>
+                    </a>
+                    <h5>$10999</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/AMD_R9-5950X_01.png"
+                        alt="Procesador AMD Ryzen 9 5950X">
+                    <p>AMD Ryzen 9 5950X</p><br>
+                </a>
+                <h5>$41800</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/Corei37100-u.png"
+                        alt="Procesador Core i3 7100-U">
+                    <p>Core i3 7100-U</p><br>
+                </a>
+                <h5>$11700</h5>
+            </div>
+            <div class="general-GridChildren fontSizeIntel"><a href=""><img src="../img/imagenes/IntelCeleron.png"
+                        alt="Procesador Intel Celeron">
+                    <p>Intel Celeron</p><br>
+                </a>
+                <h5>$6700</h5>
+            </div>
+        </div><br>
+                      <!-- HARDWARE MOBILE SECTIONS-->
+
+        <div>
+            <h1 class="no-desktop khulaYellow"><b>Procesadores</b></h1>
+        </div>
+        <section class="container-xl no-desktop">
+            <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/corei7unlocked.png"
+                            alt="Core i7 Unlocked"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <P>Core i7 Unlocked</P>
+                        <h5>$40500</h5>
+                    </div>
+                </div>
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/Corei9Unlocked.png"
+                            alt="Core i9 Unlocked"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <p>Core i9 Unlocked</p>
+                        <h5>$67500</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container-xl no-desktop">
+            <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/Ryzen52400G.png"
+                            alt="AMD Ryzen 5 2400G Gráficos Integrados Vega 8"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <P>AMD Ryzen 5 2400G Gráficos Integrados Vega 8</P>
+                        <h5>$38999</h5>
+                    </div>
+                </div>
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/amdathlon.png"
+                            alt="AMD Athlon con gráficos integrados"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <p>AMD Athlon con gráficos integrados</p>
+                        <h5>$10999</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container-xl no-desktop">
+            <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/AMD_R9-5950X_01.png"
+                            alt="AMD Ryzen 9 5950X"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <P>AMD Ryzen 9 5950X</P>
+                        <h5>$40500</h5>
+                    </div>
+                </div>
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/Corei37100-u.png"
+                            alt="Core i3 7100-U"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <p>Core i3 7100-U</p>
+                        <h5>$19800</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container-xl no-desktop">
+            <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+                <div class="card flexchildren bg-noDesktop">
+                    <a href="../pages/processors.html"><img class="img-fluid" src="../img/imagenes/IntelCeleron.png"
+                            alt="Intel Celeron"></a>
+                    <div class="card-body" style="height: auto; width: auto;">
+                        <P>Intel Celeron</P>
+                        <h5>$6700</h5>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid-Footer">
+            <div class="grid-Footerchild2">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logos/PCSTUFF logo.PNG" alt="PCSTUFF logo" class="align-items-lg-start hide-desktop">
+                    <p class="imgtextLogoPosition">PCSTUFF</p>
+                </a>
+            </div>
+            <div class="grid-Footerchild1">
+                <a href="../pages/contact.html">
+                    <p>Contacto</p>
+                </a>
+            </div>
+            <div class="grid-Footerchild1">
+                <p>Preguntas frecuentes</p>
+            </div>
+            <div class="grid-Footerchild1">
+                <a href="../pages/location.html">
+                    <p>Ubicación</p>
+                </a>
+            </div>
+            <div class="grid-Footerchild1">
+                <a href="../pages/payments1.html">
+                    <p>Formas de pago</p>
+                </a>
+            </div>
+            <div class="grid-Footerchild1">
+                <li class="nav-item">
+                    <div class="buttonContact">
+            <a class="nav-link exclude-mobile-footer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Mi cuenta
+            </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Mi cuenta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close">&times;</button>
+                                </div>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email
+                                            address</label>
+                                        <input type="email" class="form-control justify-content-center"
+                                            id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <div id="emailHelp" class="form-text">¿Olvidaste tu contraseña?</div>
+                                    </div>
+                                    <div class="loginButton">
+                                        <button type="submit" class="loginButton">Ingresar</button>
+                                    </div><br>
+                                    <div class="accountFacebook">
+                                        <img src="../img/logos/facebook1.png" alt="Facebook logo"><a
+                                            href="https://www.facebook.com/">Continuar
+                                            con
+                                            Facebook</a>
+                                    </div><br>
+                                    <div class="accountGoogle">
+                                        <img src="../img/logos/google-mas.png" alt="Google+ logo"><a
+                                            href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">Continuar
+                                            con Google</a>
+                                    </div><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="grid-Footerchild1">
+                <p>Nosotros</p>
+            </div>
+            <div class="grid-Footerchild1">
+                <a href="../pages/table.html">
+                    <p>Ofertas</p>
+                </a>
+            </div>
+            <div class="grid-Footerchild3">
+                <p>PCSTUFF © 2021 | Todos los derechos reservados.</p>
+            </div>
+            <div class="grid-Footerchild4">
+                <a href="https://www.instagram.com/"><img src="../img/logos/instagram.png" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="../img/logos/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://web.telegram.org/"><img src="../img/logos/telegrama.png" alt="Telegram"></a>
+                <a href="https://www.facebook.com/"><img src="../img/logos/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+    
+                    0: {
+                        items: 2,
+                        nav: false,
+                        loop: false,
+                        autoplay: true,
+                        rewind: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>
