@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PCSTUFF | ¡Únete a la mejor experiencia de compra y ensamblados de PC!⚡</title>
-  <link rel="shortcut icon" href="img/logos/tejon (1).png" type="image/x-icon">
+  <title>PCSTUFF | ¡Únete a la mejor experiencia de ensamblados de PC!⚡</title>
+  <link rel="shortcut icon" href="img/logos/PCSTUFF logo.PNG" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +27,9 @@
 
 <body class="backgroundColor khula">
   <div class="khulaHeader">
-    <p>¡Únete a la mejor experiencia de compra y ensamblados de PC!⚡</p>
+    <p>¡Únete a la mejor experiencia de ensamblados de PC!⚡</p>
   </div>
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="bg-khulaHeader">
     <nav class="navbar navbar-expand-lg navbar-dark container-xl">
       <div class="container-fluid">
@@ -54,11 +54,11 @@
       </button>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark container-xl">
-      <div class="container-fluid">
+      <div class="container-xl">
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/pcarmadas.html">Pc's Armadas</a>
+              <a class="nav-link active" aria-current="page" href="pages/pcarmadas.html">PC Armadas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/guide.html">GPU Guide</a>
@@ -68,16 +68,16 @@
             </li>
             <li class="nav-item">
               <div class="buttonContact">
-                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a href="index.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Mi cuenta
                 </a>
               </div>
-              <!-- Modal -->
+              <!-- Modal login-->
               <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Mi cuenta</h5>
+                      <p class="modal-title">Mi cuenta</p>
                       <button type="button" class="btn-close" data-bs-dismiss="modal"
                         aria-label="Close">&times;</button>
                     </div>
@@ -85,16 +85,13 @@
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email
                           address</label>
-                        <input type="email" class="form-control justify-content-center" id="exampleInputEmail1"
-                          aria-describedby="emailHelp">
+                        <input type="email" class="form-control justify-content-center" aria-describedby="emailHelp">
 
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <a href="">
-                          <div id="emailHelp" class="form-text">¿Olvidaste tu contraseña?</div>
-                        </a>
+                        <input type="password" class="form-control">
+                        <a class="khulaBlack" href="index.html">¿Olvidaste tu contraseña?</a>
                       </div>
                       <div class="loginButton">
                         <button type="submit" class="loginButton">Ingresar</button>
@@ -163,18 +160,15 @@
                     alt="Tarjetas video Nvidia"></a>
               </div>
               <div class="carousel-item">
-                <a href="pages/pcarmadas.html"><img
-                    src="https://storage-asset.msi.com/es/picture/user/1920x550-web-msi.jpg" class="d-block w-100"
+                <a href="pages/pcarmadas.html"><img src="img/imagenes/1920x550-web-msi.jpg" class="d-block w-100"
                     alt="Pcs armadas"></a>
               </div>
               <div class="carousel-item">
-                <a href="pages/AMD2.html"><img
-                    src="https://www.amd.com/system/files/2018-09/152250-radeon-prorender-1920x500.jpg"
-                    class="d-block w-100" alt="Graphics Card"></a>
+                <a href="pages/AMD2.html"><img src="img/imagenes/radeon-prorender-1920x500.png" class="d-block w-100"
+                    alt="Graphics Card"></a>
               </div>
               <div class="carousel-item">
-                <a href="pages/table.html"><img
-                    src="https://www.planetaip.com.uy/wp-content/uploads/2020/11/nv103-1.jpg" class="d-block w-100"
+                <a href="pages/table.html"><img src="img/imagenes/cyberpunk.jpg" class="d-block w-100"
                     alt="Tarjeta de video RTX 3090 info"></a>
               </div>
             </div>
@@ -197,49 +191,55 @@
       <h1 class="text-xl-start khulaWhiteLeft">Echa un vistazo a las marcas <b>más destacadas</b></h1>
       </div>
       <div class="flexOwl">
-        <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+        <div class="owl-carousel owl-pos-fix">
           <div class="item card flexchildren">
-            <a href="pages/corsair.html"><img class="img-fluid" src="img/imagenes/corsairad.jpg"
+            <a href="pages/corsair.html"><img class="borderRadius-owl" src="img/imagenes/corsairad.jpg"
                 alt="Corsair hardware"></a>
-            <div class="card-body" style="height:auto;">
+            <div class="card-body heightOwl-card">
               <p>CORSAIR</p>
             </div>
           </div>
           <div class="item card flexchildren">
-            <a href="pages/AMD1.html"><img class="img-fluid" src="img/imagenes/AMD1.png" alt="Hardware AMD"></a>
-            <div class="card-body" style="height:auto;">
+            <a href="pages/AMD1.html"><img class="borderRadius-owl" src="img/imagenes/AMD1.png" alt="Hardware AMD"></a>
+            <div class="card-body heightOwl-card">
               <p>AMD</p>
             </div>
           </div>
           <div class="item card flexchildren">
-            <a href="pages/coolermaster.html"><img class="img-fluid" src="img/imagenes/coolermaster.jpg"
+            <a href="pages/coolermaster.html"><img class="borderRadius-owl" src="img/imagenes/coolermaster.jpg"
                 alt="CoolerMaster hardware"></a>
-            <div class="card-body" style="height:auto;">
+            <div class="card-body card-coolermaster">
               <p>COOLER MASTER</p>
             </div>
           </div>
           <div class="item card flexchildren">
-            <a href="pages/intel.html"><img class="img-fluid" src="img/imagenes/intelcore.jpg" alt="Hardware Intel"></a>
-            <div class="card-body" style="height:auto;">
+            <a href="pages/intel.html"><img class="borderRadius-owl" src="img/imagenes/intelcore.jpg"
+                alt="Hardware Intel"></a>
+            <div class="card-body heightOwl-card">
               <p>INTEL</p>
             </div>
           </div>
           <div class="item card flexchildren">
-            <a href="pages/nvidia.html"><img class="img-fluid" src="img/imagenes/Graphics card.jpg"
+            <a href="pages/nvidia.html"><img class="borderRadius-owl" src="img/imagenes/Graphics card.jpg"
                 alt="Tarjetas video Nvida"></a>
-            <div class="card-body" style="height:auto;">
+            <div class="card-body heightOwl-card">
               <p>NVIDIA</p>
             </div>
           </div>
           <div class="item card flexchildren">
-            <a href="pages/AMD2.html"><img class="img-fluid" src="img/imagenes/radeongrapicscard.jpg"
+            <a href="pages/radeon.html"><img class="borderRadius-owl" src="img/imagenes/radeongrapicscard.jpg"
                 alt="Tarjetas video Radeon"></a>
-            <div class="card-body" style="height:auto;">
+            <div class="card-body heightOwl-card">
               <p>RADEON</p>
             </div>
           </div>
-        </div><br>
+        </div>
     </section>
+    <!-- MOBILE GPU GUIDE SECTION -->
+    <section class="no-desktop margin-imgGuide">
+      <p class="text-xl-start khulaWhiteLeft">Guia de compra de <b>tarjetas de vídeo</b></p>
+      <a href="pages/guide.html"><img class="img-fluid" src="img/imagenes/GPU Guide.png" alt="GPU guide mobile"></a>
+    </section><br>
     <!-- Titulo 2 -->
     <div class="container-xl">
       <p class="text-xl-start khulaWhiteLeft">Productos <b>más vendidos</b> en <b><i>PCSTUFF</i></b></p>
@@ -252,30 +252,30 @@
             <a href="pages/monitors.html"><img class="imgSizepcparts zoom" src="img/imagenes/asustuf1.png"
                 alt="Memorias RAMs"></a>
             <p>Monitores</p>
-            <div class="card-body" style="height: 3rem;">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/monitors.html"><img class="img-fluid" src="img/imagenes/MSI1.png" alt="Harware AMD"></a>
             <p>Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz</p>
-            <h5>$60500</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$60500</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/monitors.html"><img class="img-fluid" src="img/imagenes/redragon1.png"
                 alt="CoolerMaster hardware"></a>
             <p>Monitor Redragon Gamer Jade GM3CC27 27 165hz HDMI 1080p 1ms</p>
-            <h5>$60888</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$60888</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/monitors.html"><img class="img-fluid" src="img/imagenes/monitorasus2.png"
                 alt="CoolerMaster hardware"></a>
             <p>Monitor Gaming Asus Vg248qg 24 Fhd 0,5ms 165hz G-sync</p>
-            <h5>$65499</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$65499</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
       </article>
@@ -285,56 +285,56 @@
             <a href="pages/RAMs.html"><img class="imgSizepcparts zoom" src="img/imagenes/1582747025_3200.png"
                 alt="Memorias RAMs"></a>
             <p>RAMs</p>
-            <div class="card-body" style="height: 3rem;">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/ramviper3.png"
                 alt="DDR4 - 2x16 Gb 2999 Mhz Viper Gaming"></a>
             <p>DDR4 - 2x16 Gb 2999 Mhz Viper Gaming</p>
-            <h5>$210990</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$210990</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/ramviper1.png"
                 alt="DDR4 - 2x16 Gb 2999 Mhz Viper Gaming"></a>
             <p>DDR4 - 2x16 Gb 2999 Mhz Viper Gaming</p>
-            <h5>$11990</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$11990</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/crucial png.png"
                 alt="DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX"></a>
-            <div class="card-body" style="height: 3rem;">
-              <P>DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik</p>
-              <h5>$11990</h5>
+            <div class="card-body heightOwl-card">
+              <p>DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik</p>
+              <p><b>$11990</b></p>
             </div>
       </article>
       <article class="bg-Articles"><br>
         <div class="flexIndexparts">
           <div class="card">
-            <a href="pages/gabinetes.html"><img class="imgSizepcparts zoom"
-                src="img/imagenes/pfX1BNp8Fq6z0RoyRQ4ywuOHs4bOwxVR3u4VC1rs.jpg" alt="Gabinetes"></a>
+            <a href="pages/gabinetes.html"><img class="imgSizepcparts zoom" src="img/imagenes/mt-235gmw_2_ (1).png"
+                alt="Gabinetes"></a><br>
             <p>Gabinetes</p>
-            <div class="card-body" style="height: 3rem;">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/gabinetes.html"><img class="img-fluid" src="img/imagenes/corsaircarbide.png"
                 alt="Corsair 4000D Airflow Cabinet (White)"></a>
             <p>Corsair 4000D Airflow Cabinet (White)</p>
-            <h5>$12000</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$12000</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
             <a href="pages/gabinetes.html"><img class="img-fluid" src="img/imagenes/SPEC-05.png"
                 alt="CORSAIR Carbide Series SPEC-05"></a>
             <p>CORSAIR Carbide Series SPEC-05</p>
-            <h5>$22000</h5>
-            <div class="card-body" style="height: 3rem;">
+            <p><b>$22000</b></p>
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="card flexIndexpartschild boxShadow">
@@ -343,11 +343,11 @@
                 alt="CARBIDE 330R BLACKOUT TITANIUM EDITION"></a>
             <div class="card-body" style="height: 3rem;">
             </div>
-            <P>CARBIDE 330R TITANIUM EDITION</P>
-            <h5>$6790</h5>
+            <p>CARBIDE 330R TITANIUM EDITION</p>
+            <p><b>$6790</b></p>
           </div>
       </article>
-      <!-- HARDWARE MOBILE SECTIONS-->
+      <!-- MOBILE HARDWARE PRODUCTS-->
       <section class="container-xl no-desktop">
         <div>
           <p><b>Memorias RAM</b></p>
@@ -357,63 +357,63 @@
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/corsair2.html"><img class="img-fluid" src="img/imagenes/Corsair1.png"
                   alt="Corsair hardware"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <P>Corsair 16x2gb 3600Mhz</P>
+              <div class="card-body heightOwl-card"">
+                <p>Corsair 16x2gb 3600Mhz</p>
               </div>
             </div>
-            <div class="card flexchildren bg-noDesktop">
-              <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/crucial png.png"
-                  alt="DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <p>Crucial 16x2gb 2400Mhz</p>
+            <div class=" card flexchildren bg-noDesktop">
+                <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/crucial png.png"
+                    alt="DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX"></a>
+                <div class="card-body heightOwl-card">
+                  <p>Crucial 16x2gb 2400Mhz</p>
+                </div>
               </div>
-            </div>
-            <div class="card flexchildren bg-noDesktop">
-              <a href="pages/coolermaster.html"><img class="img-fluid" src="img/imagenes/ramviper3.png"
-                  alt="CoolerMaster hardware"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <p>Viper 16x2gb 2400Mhz</p>
+              <div class="card flexchildren bg-noDesktop">
+                <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/ramviper3.png"
+                    alt="Viper 16x2gb 2400Mhz"></a>
+                <div class="card-body heightOwl-card">
+                  <p>Viper 16x2gb 2400Mhz</p>
+                </div>
               </div>
-            </div>
-            <div class="card flexchildren bg-noDesktop">
-              <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/ramhyperx1.png"
-                  alt="DDR4 - 2x4 Gb 2666 Mhz Fury Hyperx"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <p>Hyperx Fury 2x4GB 2666Mhz</p>
+              <div class="card flexchildren bg-noDesktop">
+                <a href="pages/RAMs.html"><img class="img-fluid" src="img/imagenes/ramhyperx1.png"
+                    alt="DDR4 - 2x4 Gb 2666 Mhz Fury Hyperx"></a>
+                <div class="card-body heightOwl-card">
+                  <p>Hyperx 2x4GB 2666Mhz</p>
+                </div>
               </div>
-            </div>
       </section>
       <section class="container-xl no-desktop">
         <div>
           <p><b>Refrigeración</b></p>
         </div>
         <div class="flexOwl">
-          <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+          <div class="owl-carousel owl-pos-fix">
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/coolermaster.html"><img class="img-fluid" src="img/imagenes/Hyper H411R.png"
                   alt="Corsair hardware"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <P>Hyper H411R CPU fan</P>
+              <div class="card-body heightOwl-card">
+                <p>Hyper H411R CPU fan</p>
               </div>
             </div>
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/coolers.html"><img class="img-fluid" src="img/imagenes/packx5fan.png"
                   alt="ARCTIC F8 PWM PST (5 Pack)"></a>
-              <div class="card-body" style="height: auto; width: auto;">
+              <div class="card-body heightOwl-card">
                 <p>ARCTIC F8 PWM(5 Pack)</p>
               </div>
             </div>
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/corsair2.html"><img class="img-fluid" src="img/imagenes/corsairfan1.png"
                   alt="Corsair Af 120 Led Air Series RGB Pack x2"></a>
-              <div class="card-body" style="height: auto; width: auto;">
+              <div class="card-body heightOwl-card">
                 <p>Corsair Af 120 RGB Pack x2</p>
               </div>
             </div>
             <div class="card flexchildren bg-noDesktop"">
               <a href=" pages/coolers.html"><img class="img-fluid" src="img/imagenes/2fanliquidnzxt.png"
                 alt="NZXT Kraken X53, RGB, 240mm, Socket Intel, AMD, AIO"></a>
-              <div class="card-body" style="height: auto; width: auto;">
+              <div class="card-body heightOwl-card">
                 <p>NZXT Kraken X53 240mm</p>
               </div>
             </div>
@@ -428,51 +428,27 @@
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/nvidia.html"><img class="img-fluid" src="img/imagenes/GTX1650super.png"
                   alt="CoolerMaster Hyper H411R CPU Fan"></a>
-              <div class="card-body" style="height: auto; width: auto;">
-                <P>ASUS 1650 Super 4G</P>
+              <div class="card-body heightOwl-card">
+                <p>ASUS 1650 Super 4G</p>
               </div>
             </div>
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/AMD2.html"><img class="img-fluid" src="img/imagenes/5500xt.png"
                   alt="MSI Radeon RX 5500 XT"></a>
-              <div class="card-body" style="height: auto; width: auto;">
+              <div class="card-body heightOwl-card">
                 <p>MSI Radeon RX 5500 XT</p>
               </div>
             </div>
             <div class="card flexchildren bg-noDesktop">
               <a href="pages/nvidia.html"><img class="img-fluid" src="img/imagenes/1660pny.png"
                   alt="PNY GeForce GTX 1660 6GB XLR8 Gaming Overclocked Edition"></a>
-              <div class="card-body" style="height: auto; width: auto;">
+              <div class="card-body heightOwl-card">
                 <p>PNY GTX 1660 6gb</p>
               </div>
             </div>
           </div>
         </div><br>
       </section>
-      <article>
-        <div class="container-xl">
-          <div class="row">
-            <div class="col ">
-              <iframe class="videoSize" width="560" height="315" src="https://www.youtube.com/embed/6fE7gE14GaU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="col">
-              <iframe class="videoSize" width="560" height="315" src="https://www.youtube.com/embed/pBJSZDryt3g"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="col">
-              <iframe class="videoSize" width="560" height="315" src="https://www.youtube.com/embed/WDWo96lUoAs"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </article>
       <article class="sectionCircles">
         <div class="flexBoxCircles khula">
           <div class="flexchildren2"><img class="centerImage" src="img/logos/tarjeta-de-credito.png"
@@ -486,45 +462,43 @@
       </article>
     </section>
     <section class="container-xl">
-      <!-- Titulo 1 -->
-      </div>
-      <div class="flexOwl">
-        <div class="owl-carousel owl-pos-fix owl-themeo owl-loaded">
+      <!-- Owl marcas-->
+      <div>
+        <div class="owl-carousel owl-pos-fix">
           <div class="item card2 flexchildren">
             <img class="img-fluid" src="img/imagenes/Client-Logos-Asus.png" alt="Client-Logos-Asus">
-            <div class="card-body" style="height: 3rem;">
-            </div>
-          </div>
-          <div class="item card2 flexchildren">
-            <img class="img-fluid" src="img/imagenes/corsair-logo-0.png" alt="corsairlogo">
-            <div class="card-body" style="height: 3rem;">
-            </div>
-          </div>
-          <div class="item card2 flexchildren">
-            <img class="img-fluid" src="img/imagenes/coolermaster.png" alt="CoolerMaster logo">
-            <div class="card-body" style="height: 3rem;">
-            </div>
-          </div>
-          <div class="item card2 flexchildren">
-            <img class="img-fluid" src="img/imagenes/intel-logo-0.png" alt="intel-logo">
-            <div class="card-body" style="height: 1rem;">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="item card2 flexchildren">
             <img class="img-fluid" src="img/imagenes/aorus-logo-0.png" alt="aorus-logo">
-            <div class="card-body" style="height: 1rem;">
+            <div class="card-body heightOwl-card">
+            </div>
+          </div>
+          <div class="item card2 flexchildren">
+            <img class="img-fluid" src="img/imagenes/new-lenovo-logo.png" alt="Lenovo logo">
+            <div class="card-body heightOwl-card">
+            </div>
+          </div>
+          <div class="item card2 flexchildren">
+            <img class="img-fluid" src="img/imagenes/corsair-logo-0.png" alt="corsairlogo">
+            <div class="card-body heightOwl-card">
+            </div>
+          </div>
+          <div class="item card2 flexchildren">
+            <img class="img-fluid" src="img/imagenes/intel-logo-0.png" alt="intel-logo">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
           <div class="item card2 flexchildren">
             <img class="img-fluid" src="img/imagenes/gigabyte-logo-0.png" alt="gigabyte-logo">
-            <div class="card-body" style="height: 3rem;">
+            <div class="card-body heightOwl-card">
             </div>
           </div>
-        </div><br>
+        </div>
     </section>
-
   </main>
-  <!-- Footer grid -->
+  <!-- FOOTER-->
   <footer>
     <div class="grid-Footer">
       <div class="grid-Footerchild2">
@@ -533,13 +507,20 @@
           <p class="imgtextLogoPosition">PCSTUFF</p>
         </a>
       </div>
+      <div class="grid-Footerchild1 no-desktop">
+        <a href="pages/about2.html">
+          <p>Nosotros</p>
+        </a>
+      </div>
+      <div class="grid-Footerchild1 hide-desktop">
+        <a href="pages/nosotros.html">
+          <p>Nosotros</p>
+        </a>
+      </div>
       <div class="grid-Footerchild1">
         <a href="pages/contact.html">
           <p>Contacto</p>
         </a>
-      </div>
-      <div class="grid-Footerchild1">
-        <p>Preguntas frecuentes</p>
       </div>
       <div class="grid-Footerchild1">
         <a href="pages/location.html">
@@ -552,53 +533,55 @@
         </a>
       </div>
       <div class="grid-Footerchild1">
-        <li class="nav-item">
-          <a href="index.html"><div class="buttonContact"
-            class="nav-link exclude-mobile-footer" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Mi cuenta</a>
-          </div>
-          <!-- Modal -->
-          <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Mi cuenta</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                </div>
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email
-                      address</label>
-                    <input type="email" class="form-control justify-content-center" id="exampleInputEmail1"
-                      aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <div id="emailHelp" class="form-text">¿Olvidaste tu contraseña?</div>
-                  </div>
-                  <div class="loginButton">
-                    <button type="submit" class="loginButton">Ingresar</button>
-                  </div><br>
-                  <div class="accountFacebook">
-                    <img src="img/logos/facebook1.png" alt="Facebook logo"><a href="https://www.facebook.com/">Continuar
-                      con
-                      Facebook</a>
-                  </div><br>
-                  <div class="accountGoogle">
-                    <img src="img/logos/google-mas.png" alt="Google+ logo"><a
-                      href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">Continuar
-                      con Google</a>
-                  </div><br>
-                </form>
+        <div class="buttonContact">
+          <a href="index.html" class="nav-link exclude-mobile-footer" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Mi cuenta
+          </a>
+        </div>
+        <!-- Modal login-->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title">Mi cuenta</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
               </div>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email
+                    address</label>
+                  <input type="email" class="form-control justify-content-center" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control">
+                  <a class="khulaBlack" href="index.html">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="loginButton">
+                  <button type="submit" class="loginButton">Ingresar</button>
+                </div><br>
+                <div class="accountFacebook">
+                  <img src="img/logos/facebook1.png" alt="Facebook logo"><a href="https://www.facebook.com/">Continuar
+                    con
+                    Facebook</a>
+                </div><br>
+                <div class="accountGoogle">
+                  <img src="img/logos/google-mas.png" alt="Google+ logo"><a
+                    href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">Continuar
+                    con Google</a>
+                </div><br>
+              </form>
             </div>
           </div>
+        </div>
         </li>
       </div>
-      <a href="pages/about.html"><div class="grid-Footerchild1">
-        <p>Nosotros</p>
-      </div></a>
+      <div class="grid-Footerchild1 hide-desktop">
+        <a href="pages/guide.html">
+          <p>GPU Guide</p>
+        </a>
+      </div>
       <div class="grid-Footerchild1">
         <a href="pages/table.html">
           <p>Ofertas</p>
@@ -616,6 +599,7 @@
     </div>
   </footer>
   </div>
+  <!-- SCRIPTS -->
   <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

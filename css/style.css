@@ -51,7 +51,6 @@ font-weight: bold;
 
 /* FIN BEM */
 
-
 .khulaHeader {
     color: white;
     font-family: 'Khula', sans-serif;
@@ -59,7 +58,7 @@ font-weight: bold;
     font-size: 15px;
     height: 1.5rem;
     text-align: center;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(25, 25, 25);
 }
 
 .bg-khulaHeader{
@@ -75,15 +74,6 @@ font-weight: bold;
 
 }
 
-.formModal {
-    color: black;
-    font-family: 'Khula', sans-serif;
-    text-align: center;
-    background: rgb(8, 8, 8);
-
-
-    
-}
 .dropdown-menu {
     animation: slide-in-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     width: 20rem;
@@ -133,13 +123,6 @@ font-weight: bold;
     margin-right: 1rem;
 }
 
-
-.form-control2{
-    width: 35rem;
-    margin-right: 42rem;
-    border-radius: 0.7rem;
-}
-
 .form-control4{
   padding: 0.3rem;
   width: 42rem;
@@ -160,7 +143,7 @@ font-weight: bold;
 
 }
 
-.modal-header {
+.modal .modal-header {
     color: white;
     font-family: 'Khula', sans-serif;
     text-align: center;
@@ -169,11 +152,14 @@ font-weight: bold;
 
 }
 
-
 .btn-close{
     color: white;
     background: black;
     border: none;
+}
+
+.btn-close:hover{
+  color: white;
 }
 
 .buttonContact {
@@ -187,6 +173,8 @@ font-weight: bold;
 .buttonContact:hover {
     color: #ffffff;
 }
+
+
 
 .btn-primary {
     color: rgb(192, 192, 192);
@@ -241,6 +229,7 @@ font-weight: bold;
     color: white;
     font-family: 'Khula', sans-serif;
     font-size: large;
+    text-align: left;
 }
 
 
@@ -255,6 +244,12 @@ font-weight: bold;
     font-family: 'Khula', sans-serif;
 }
 
+.khulaBlack {
+  color: #000000;
+}
+.khulaBlack:hover {
+  color: #000000;
+}
 footer {
     background-color: rgb(8, 8, 8);
 }
@@ -328,11 +323,6 @@ footer p {
     margin-right: auto;
     width: 55%;
   }
-  .centerImage2 {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
 
 .backgroundColor {
     background-color: black;
@@ -354,12 +344,17 @@ footer p {
 
   }
 
-.inputColor {
-    color: white;
+.heightOwl-card {
+    height: 4rem;
 }
 
 .imgSize {
     margin-top: 2.5rem;
+
+}
+
+.borderRadius-owl {
+  border-radius: 0.2rem;
 
 }
 
@@ -374,7 +369,7 @@ footer p {
 }
 
 .zoom {
-    transition: transform 0.2s;
+    transition: transform 0.4s;
 }
 
 .flexBoxguide {
@@ -472,33 +467,6 @@ nav ul li ul li {
     display: block;
 
 }
-
-/**
- * ----------------------------------------
- * animation slide-fwd-center
- * ----------------------------------------
- */
- @-webkit-keyframes slide-fwd-center {
-    0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-    }
-    100% {
-      -webkit-transform: translateZ(160px);
-              transform: translateZ(160px);
-    }
-  }
-  @keyframes slide-fwd-center {
-    0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-    }
-    100% {
-      -webkit-transform: translateZ(160px);
-              transform: translateZ(160px);
-    }
-  }
-
 
 aside {
 	grid-area: aside;
@@ -687,21 +655,6 @@ margin-left: 5.5rem;
 
   }
 
-  @keyframes cambio {
-      0% { margin-left: 0;}
-      20% { margin-left: 0;}
-
-      25% { margin-left: -100%;}
-      45% { margin-left: -100%;}
-
-      50% { margin-left: -200%;}
-      70% { margin-left: -200%;}
-
-      75% { margin-left: -300%;}
-      100% { margin-left: -300%;}
-  }
-
-
 .container {
     background: black;
     color: white;
@@ -737,17 +690,12 @@ margin-left: 5.5rem;
     display: block;
 }
 
-.owl-next {
-  height: 1rem;
-  width: 1rem;
-  background-size: 5rem, 5rem;
-
-}
 .card {
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     background-color: rgb(5, 5, 5);
-    height: 17.2rem;
-}
+    height: 18.2rem;
+    width: auto;
+  }
 
 
 .card2 {
@@ -758,6 +706,7 @@ margin-left: 5.5rem;
 
 
 .card-body {
+      height: auto;
       width: auto;
   }
 
@@ -1039,6 +988,12 @@ margin-left: 5.5rem;
 .hide-desktop {
   color: white;
 }
+
+.card-coolermaster {
+  height: auto;
+  width: auto;
+}
+
 /* .d-flex {
     width: 30rem;
 } */
@@ -1335,12 +1290,12 @@ margin-left: 5.5rem;
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media (min-width: 1px) and (max-width: 1310px) {
 
 .item {
     padding-left: 0;
     padding-right: 0;
-    height: 10rem;
+    height: auto;
 
 }
 
@@ -1350,27 +1305,15 @@ margin-left: 5.5rem;
     top: 0.6rem;
 }
 
-.flexIndexparts {
-    display: inline-block;
-    justify-content: space-around;
-    background-color: rgb(5, 5, 5);
-    margin-left: auto;
-    margin-right: auto;
-    
-    }
  .khulaWhiteLeft {
     color: white;
     font-family: 'Khula', sans-serif;
     font-size:large;
-    font-weight: bold;
     width: auto;
     
     
 }
 
-.form-control {
-    display: none;
-}
 .carousel-item {
     width: 100%;
     height: auto;
@@ -1414,7 +1357,7 @@ margin-left: 5.5rem;
 
 
 .navbar {
-    height: auto;
+  height: auto;
 }
 .khulaHeader {
 display: none;
@@ -1445,13 +1388,6 @@ display: none;
     margin-right: auto;
 }
 
-.imglogoPosition {
-display: none; 
-}
-
-.imgtextLogoPosition {
-display: none;
-}
 
 .btn2 {
   display: none;
@@ -1459,48 +1395,23 @@ display: none;
 .card2 {
   width: auto;
 }
-.item {
-  height:auto;
-}
 
 .form-control4{
 display: none;
 }
 
-.btn4 {
-  position: absolute;
-  left: 15rem;
-}
-
 .flexOwl {
   display: flex;
  align-items: stretch;
-
-  }
-
-.processorGrid {
-display: block;
-height: auto;
-  }
-.general-GridChildren {
-  position: auto;
-  top: 40rem;
+ padding: auto;
 
 }
+
 .dropdown-menu {
   width: 15rem;
   height: auto;
 }
 
-.general-Grid {
-  height: auto;
-  display: inline-block;
-  
-}
-.amdgrid2 {
-  display: block;
-  height: auto;
-}
 .nextPage {
   height: auto;
   margin-left: -5rem;
@@ -1509,6 +1420,9 @@ height: auto;
 .flexBoxguide {
   height: auto;
   display: block;
+}
+.articleMobile-guide {
+  padding: 2rem;
 }
 .flexchildren {
   height: auto;
@@ -1520,12 +1434,15 @@ height: auto;
 .flexBoxCircles {
   display: none;
 }
-.card {
-  height:auto;
+
+.sectionCircles {
+  display: none;
 }
-.item {
-  height: auto;
+
+.flexBoxCircles .flexchildren2 {
+  display: none;
 }
+
 aside {
   height: auto;
 }
@@ -1540,22 +1457,13 @@ aside {
 }
 .btn {
   width: auto;
-  height: auto;
+  height: 26rem;
+  margin-right: 2rem;
 }
 .asidegrid2 {
   height: auto;
 }
-.intelGrid {
-  display: block;
-  height: auto;
-}
-.gridVideocard {
-  display: block;
-  height: auto;
-}
-.flexIndexparts {
-  display: none;
-}
+
 .modal {
   width: auto;
 }
@@ -1564,7 +1472,6 @@ aside {
   height: auto;
   width: auto;
   margin-top: 2rem;
-  display: none;
 }
 
 .no-desktop {
@@ -1586,14 +1493,110 @@ aside {
 display: none;
 
 }
+.card-coolermaster {
+height:4rem;
+width: 9.5rem; 
+margin-left: -0.5rem;
 }
 
-@media only screen and (min-width: 767px) {
+.carousel-indicators {
+  display: none;
+}
+
+.bg-Articles {
+  display: none;
+}
+
+.margin-imgGuide {
+  padding: auto;
+}
+
+.submit-form {
+  position: absolute;
+  margin-top: -0.5rem;
+  margin-left: 3.5rem;
+} 
+
+.contact-mobile {
+  padding: 2rem;
+}
+
+flexIndexparts {
+  width: 20rem;
+}
+
+
+}
+@media (min-width: 1310px) and (max-width: 1399px) {
+
+  .navbar-nav {
+    padding-left: 10rem;
     
-.flexOwl {
- display: flex;
-align-items: stretch;
+  }
+  .btn4 {
+    position:relative;
+    border: none;
+    outline: none;
+    margin-right: 8.5rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .flexIndexpartschild {
+    flex-basis: auto;
+    background-color: rgb(8, 8, 8);
+    width: 20rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    
+}
+
+.flexIndexparts {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(5, 5, 5);
+  margin-left: 4rem;
+  margin-right: 4rem;
+  
 
 }
 
+.margin-lefttable {
+  margin-left: 15rem;
+}
+.height-Founders {
+  margin-top: 2rem;
+}
+}
+@media (min-width: 1400px) and (max-width: 1804px) {
+  .flexIndexpartschild {
+    flex-basis: auto;
+    background-color: rgb(8, 8, 8);
+    width: 20rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    
+}
+
+.flexIndexparts {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(5, 5, 5);
+  margin-left: 4rem;
+  margin-right: 4rem;
+
+}
+.margin-lefttable {
+  margin-left: 25rem;
+}
+.height-Founders {
+  margin-top: 2rem;
+}
 }
