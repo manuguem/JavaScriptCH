@@ -12,6 +12,7 @@ footer {
   grid-gap: 4rem;    
   color: white;
   margin-left: 20rem;
+  font-size: 18px;
   p{
     display:inline-block;
     font-weight: bold;
@@ -24,6 +25,22 @@ footer {
     top:0.6rem;  
     left: -0.5rem;
     }
+div {
+  display: inline-block;
+   width: 12rem;
+}
+div {
+  
+  a {
+    .grid-Footerchild1 {
+       width: 20rem; right:25.5rem; position: absolute; 
+
+    }
+
+    .grid-Footerchild4 {
+      margin-left: 5rem;
+    }
+    }
   }
 }
-
+  }
