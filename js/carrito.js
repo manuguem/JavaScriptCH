@@ -2,15 +2,9 @@ let sumaTotal = 0;
 let iva = 0.15
 
 
-<<<<<<< HEAD
 const sumar = x => sumaTotal = sumaTotal + x;
 const calculo_IVA = x => calcular_iva = x * iva;
 const damePrecio = (producto) => {
-=======
-const suma = x => sumaTotal = sumaTotal + x;
-const acumPrecio = (producto) => {
-
->>>>>>> 7a34bca571390ebbae536fa178093d63dbdefedf
     switch (producto) {
         case "Fuente Modular 500w EVGA":
             return 20500;
@@ -34,20 +28,16 @@ let dato = "";
 do {
     dato = prompt("Ingrese producto o salir para culminar compra:");
     
-    precio = acumPrecio(dato);
-    suma(precio);
+    precio = damePrecio(dato);
+    sumar(precio);
 
     console.log(sumaTotal);
 
 
 } while (dato != "salir" )
 
-<<<<<<< HEAD
 let numero_iva = calculo_IVA(sumaTotal);
 let total_iva = sumaTotal + numero_iva;
 
 alert("Total con envío es: " + sumaTotal);
 alert("Total con envío e IVA: " + total_iva);
-=======
-alert("Total con envío es: " + sumaTotal);
->>>>>>> 7a34bca571390ebbae536fa178093d63dbdefedf
