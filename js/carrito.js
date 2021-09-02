@@ -1,8 +1,10 @@
 let sumaTotal = 0;
+let iva = 0.15
+
 
 const sumar = x => sumaTotal = sumaTotal + x;
+const calculo_IVA = x => calcular_iva = x * iva;
 const damePrecio = (producto) => {
-
     switch (producto) {
         case "Fuente Modular 500w EVGA":
             return 20500;
@@ -24,7 +26,7 @@ const damePrecio = (producto) => {
 
 let dato = "";
 do {
-    dato = prompt("Ingrese producto:");
+    dato = prompt("Ingrese producto o salir para culminar compra:");
     
     precio = damePrecio(dato);
     sumar(precio);
@@ -34,4 +36,8 @@ do {
 
 } while (dato != "salir" )
 
+let numero_iva = calculo_IVA(sumaTotal);
+let total_iva = sumaTotal + numero_iva;
+
 alert("Total con envío es: " + sumaTotal);
+alert("Total con envío e IVA: " + total_iva);
