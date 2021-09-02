@@ -6,17 +6,17 @@ const sumar = x => sumaTotal = sumaTotal + x;
 const calculo_IVA = x => calcular_iva = x * iva;
 const damePrecio = (producto) => {
     switch (producto) {
-        case "Fuente Modular 500w EVGA":
+        case "fuente modular 500w evga":
             return 20500;
         case "Fuente 800w AIGO":
             return 21800;
-        case "Fuente modular 550w EVGA":
+        case "fuente modular 550w evga":
             return 21900;
-        case "Fuente Akyga 600w":
+        case "fuente akyga 600w":
             return 15990;
-        case "Fuente MPB 750W":
+        case "fuente mpb 750w":
             return 18800;
-        case "Fuente 500w Akygo":
+        case "fuente 500w akygo":
             return 8300;
         default:
             return 0;
