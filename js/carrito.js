@@ -26,7 +26,7 @@ const damePrecio = (producto) => {
 
 let dato = "";
 do {
-    dato = prompt("Ingrese producto o salir para culminar compra:");
+    dato = prompt("Ingrese producto o 'salir' para culminar compra:");
     
     precio = damePrecio(dato);
     sumar(precio);
@@ -40,4 +40,4 @@ let numero_iva = calculo_IVA(sumaTotal);
 let total_iva = sumaTotal + numero_iva;
 
 alert("Total con envío es: " + sumaTotal);
-alert("Total con envío e IVA: " + total_iva);
+alert("Total con envío e IVA es: " + total_iva);
