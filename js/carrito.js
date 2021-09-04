@@ -11,7 +11,7 @@ class Fuentepoder {
 
 }
 
-let nombre = ""
+let nombre = "";
 
 do {
 
