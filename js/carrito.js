@@ -64,3 +64,7 @@ do {
     }
 
 } while (nombre != "salir")
+
+// const precio_total = (precio_total + precio);
+
+// console.log("El precio total es " + precio_total);
