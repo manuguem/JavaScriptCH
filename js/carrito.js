@@ -1,43 +1,60 @@
-let sumaTotal = 0;
-let iva = 0.15
+class Fuentepoder {
+    constructor(nombre, precio, watts) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.watts = watts;
+    }
 
-
-const sumar = x => sumaTotal = sumaTotal + x;
-const calculo_IVA = x => calcular_iva = x * iva;
-const damePrecio = (producto) => {
-    switch (producto) {
-        case "fuente modular 500w evga":
-            return 20500;
-        case "Fuente 800w AIGO":
-            return 21800;
-        case "fuente modular 550w evga":
-            return 21900;
-        case "fuente akyga 600w":
-            return 15990;
-        case "fuente mpb 750w":
-            return 18800;
-        case "fuente 500w akygo":
-            return 8300;
-        default:
-            return 0;
+    hablar() {
+        console.log(`Producto a comprar: ${this.nombre}`);
     }
 
 }
 
-let dato = "";
-do {
-    dato = prompt("Ingrese producto o 'salir' para culminar compra:");
-    
-    precio = damePrecio(dato);
-    sumar(precio);
+let nombre = prompt("Ingrese nombre del producto que desea comprar:");
 
-    console.log(sumaTotal);
+if (nombre == "fuente modular 500w evga") {
 
+    const Fuentepoder1 = new Fuentepoder(nombre, 20500, "500watts");
+    console.log(Fuentepoder1)
 
-} while (dato != "salir" )
+}
 
-let numero_iva = calculo_IVA(sumaTotal);
-let total_iva = sumaTotal + numero_iva;
+else if (nombre == "fuente 800w aigo") {
 
-alert("Total con envío es: " + sumaTotal);
-alert("Total con envío e IVA es: " + total_iva);
+    const Fuentepoder2 = new Fuentepoder(nombre, 21800, "800watts");
+    console.log(Fuentepoder2)
+
+}
+
+else if (nombre == "fuente modular 550w evga") {
+
+    const Fuentepoder3 = new Fuentepoder(nombre, 21999, "550watts");
+    console.log(Fuentepoder3)
+
+}
+
+else if (nombre == "fuente akyga 600w") {
+
+    const Fuentepoder4 = new Fuentepoder(nombre, 15990, "600watts");
+    console.log(Fuentepoder4)
+
+}
+
+else if (nombre == "fuente mpb 750w") {
+
+    const Fuentepoder5 = new Fuentepoder(nombre, 18800, "750watts");
+    console.log(Fuentepoder5)
+
+}
+
+else if (nombre == "fuente 500w akyga") {
+
+    const Fuentepoder6 = new Fuentepoder(nombre, 8300, "500watts");
+    console.log(Fuentepoder6)
+
+}
+
+else {
+    console.log("Producto no válido")
+}
