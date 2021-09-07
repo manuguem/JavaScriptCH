@@ -168,9 +168,6 @@
                 </a><br>
                 <p class="fontSizeIntel">Marcas</p><br>
                 <a href="">
-                    <p>Corsair</p>
-                </a>
-                <a href="">
                     <p>EVGA</p>
                 </a>
                 <a href="">
@@ -185,39 +182,56 @@
             </aside>
             <div class="general-GridChildren"><a href=""><img src="../img/imagenes/EVGA 500W.png"
                         alt="Fuente 500w EVGA">
-                    <p>Fuente Modular 500w EVGA</p><br>
+                    <p>Fuente Modular 500w EVGA</p>
                 </a>
-                <p>$20500</p>
+                <p style="font-size: 1.2rem"><b>$20500</b></p><br>
+                <div class="btnCompra">
+                    <a href="">Comprar</a>
+                </div>
             </div>
             <div class="general-GridChildren"><a href=""><img src="../img/imagenes/AIGO 800W.png"
                         alt="Fuente 800w AIGO">
-                    <p>Fuente 800w AIGO</p><br>
+                    <p>Fuente 800w AIGO</p>
                 </a>
-                <p>$21800</p>
+                <p style="font-size: 1.2rem"><b>$21800</b></p><br>
+                <div class="btnCompra">
+                    <a href="">Comprar</a>
+                </div>
             </div>
             <div class="general-GridChildren"><a href=""><img src="../img/imagenes/EVGA 550W.png"
                         alt="Fuente 550w EVGA">
-                    <p>Fuente modular 550w EVGA</p><br>
+                    <p>Fuente modular 550w EVGA</p>
                 </a>
-                <p>$21999</p>
+                <p style="font-size: 1.2rem"><b>$21999</b></p><br>
+                <div class="btnCompra">
+                    <a href="">Comprar</a>
+                </div>
             </div>
             <div class="general-GridChildren"><a href=""><a href=""><img src="../img/imagenes/akyga 600w.png"
                             alt="Fuente Akyga 600w">
-                        <p>Fuente Akyga 600w</p><br>
+                        <p>Fuente Akyga 600w</p>
                     </a>
-                    <p>$15990</p>
+                    <p style="font-size: 1.2rem"><b>$15990</b></p><br>
+                    <div class="btnCompra">
+                        <a href="">Comprar</a>
+                    </div>
             </div>
             <div class="general-GridChildren"><a href=""><img src="../img/imagenes/mpb750.png" alt="Fuente 750w MPB750">
                     <p>Fuente MPB 750W</p>
-                    <br>
                 </a>
-                <p>$18800</p>
+                <p style="font-size: 1.2rem"><b>$18800</b></p><br>
+                <div class="btnCompra">
+                    <a href="">Comprar</a>
+                </div>
             </div>
             <div class="general-GridChildren"><a href=""><img src="../img/imagenes/Akyga 500w.png"
                         alt="Fuente 500w Akygo">
-                    <p>Fuente 500w Akygo</p><br>
+                    <p>Fuente 500w Akyga</p>
                 </a>
-                <p>$8300</p>
+                <p style="font-size: 1.2rem"><b>$8300</b></p><br>
+                <div class="btnCompra">
+                    <a href="">Comprar</a>
+                </div>
             </div>
         </div><br>
         <!-- MOBILE HARDWARE PRODUCTS-->
@@ -401,7 +415,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="../js/carrito.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+
+                0: {
+                    items: 2,
+                    nav: false,
+                    loop: false,
+                    autoplay: true,
+                    rewind: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
