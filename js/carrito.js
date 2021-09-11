@@ -72,4 +72,4 @@ do {
 
 } while (true)
 
-alert(`Compra finalizada. Usted agregó ${shoppingCart.length} productos al carrito`);
+alert(`Usted agregó ${shoppingCart.length} productos al carrito`);
