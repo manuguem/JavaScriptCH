@@ -39,15 +39,15 @@ console.log("Ordenar productos por mayor precio: ")
 const Mayor_precio = [20500, 21800, 18800, 15990, 21999, 8300];
 console.log(Mayor_precio.sort((a, b) => b - a));
 
+
+/* Carrito de compras */
+
 class Hardwarepart {
     constructor(name) {
         this.name = name.toLowerCase()
 
     }
 }
-
-
-/* Carrito de compras */
 
 const shoppingCartL = sessionStorage.getItem("shoppingC");
 const shoppingCart = [];
