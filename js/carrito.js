@@ -73,3 +73,5 @@ do {
 } while (true)
 
 alert(`Usted agregó ${shoppingCart.length} productos al carrito`);
+
+
