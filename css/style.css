@@ -339,7 +339,7 @@ footer p {
   margin-top: -2.5rem;
 }
 
-#btn-carrito {
+#btn-msi {
   position: relative;
   display: inline-block;
   border: none;
@@ -358,6 +358,46 @@ footer p {
   transition: 0.5s all ease;
   margin-top: -2.5rem;
 }
+
+#btn-redragon {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 30px;
+  height: auto;
+  font-size: 16px;
+  line-height: 44px;
+  transition: .25s linear;
+  background: #1b1b1b;
+  color: #fff;
+  filter: grayscale(-0.1%) opacity(0.1);
+  transition: 0.5s all ease;
+  margin-top: -2.5rem;
+}
+#btn-asus {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 30px;
+  height: auto;
+  font-size: 16px;
+  line-height: 44px;
+  transition: .25s linear;
+  background: #1b1b1b;
+  color: #fff;
+  filter: grayscale(-0.1%) opacity(0.1);
+  transition: 0.5s all ease;
+  margin-top: -2.5rem;
+}
+
 
 .btnCompra:hover {
   background: #2c2c2c;
