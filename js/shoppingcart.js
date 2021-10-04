@@ -28,6 +28,13 @@ function addToshoppingCart(e) {
 
     }
     additemshoppingCart(newItem)
+
+    //jQuery CLICK method
+
+    $(".btnCompra").click(function () { 
+        alert("Tienes en el carrito: "+ itemTitle);
+    });
+    
 }
 
 function additemshoppingCart(newItem) {
@@ -54,7 +61,7 @@ function rendershoppingCart() {
 
         <th scope="row">1</th>
         <td class="table_products">
-            <img src=${item.images} alt="Monitor MSI Curvo">
+            <img src=${item.images} alt="">
             <h6 class="title">${item.title}</h6>
         </td>
         <td class="table_prices">${item.price}</td>
@@ -68,4 +75,6 @@ function rendershoppingCart() {
         tbody.append(tr)
 
     })
+    
 }
+
