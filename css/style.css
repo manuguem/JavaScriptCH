@@ -195,8 +195,8 @@ font-weight: bold;
 
 .modal-content {
     width: 50rem;
-    height: 10rem;
-    background-color: black;
+    height: auto;
+    background: rgb(8, 8, 8);
     animation: slide-in-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     
@@ -255,9 +255,11 @@ font-weight: bold;
   color: #000000;
 }
 footer {
+    padding-top: 1.5rem;
     background-color: rgb(8, 8, 8);
     position: relative;
     bottom: 0;
+    height: 12rem;
     
 }
 
@@ -746,7 +748,6 @@ margin-left: 5.5rem;
   }
 
 .container {
-    background: black;
     color: white;
 }
 .row {
@@ -1386,6 +1387,14 @@ margin-left: 5.5rem;
     padding-right: 0;
     height: auto;
 
+}
+
+.general-Grid {
+  display: inline-block;
+}
+
+footer {
+  bottom: 0;
 }
 
 .navbar-toggler {
