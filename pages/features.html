@@ -46,104 +46,50 @@
                 <button class="btn4 btn-primary2 img-fluid"><img src="../img/logos/magnifying-glass.png"
                         alt="Lupa de búsqueda"></button>
             </div>
-            <button class="btn2 btn-primary2">
-                <a href="../pages/carrito.html"><img src="../img/logos/carrito-de-compras.png"
-                        alt="carrito-de-compras"></a>
+            <div class="btn2 btn-primary2">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/logos/carrito-de-compras.png"
+                        alt="carrito-de-compras">
                 <span
-                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                    class="position-absolute top-0 start-100 translate-middle p-1 border-light">
                     <span class="visually-hidden">New alerts</span>
                 </span>
-            </button>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark container-xl">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/pcarmadas.html">PC
-                                Armadas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/guide.html">GPU Guide</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/table.html">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="buttonContact">
-                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Mi cuenta
-                                </a>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <p class="modal-title" id="exampleModalLabel">Mi cuenta</p>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close">&times;</button>
-                                        </div>
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Email
-                                                    address</label>
-                                                <input type="email" class="form-control justify-content-center"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                                <input type="password" class="form-control" id="exampleInputPassword1">
-                                                <a href="">
-                                                    <div id="emailHelp" class="form-text">¿Olvidaste tu contraseña?
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="loginButton">
-                                                <button type="submit" class="loginButton">Ingresar</button>
-                                            </div><br>
-                                            <div class="accountFacebook">
-                                                <img src="../img/logos/facebook1.png" alt="Facebook logo"><a
-                                                    href="https://www.facebook.com/">Continuar con
-                                                    Facebook</a>
-                                            </div><br>
-                                            <div class="accountGoogle">
-                                                <img src="../img/logos/google-mas.png" alt="Google+ logo"><a
-                                                    href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">Continuar
-                                                    con Google</a>
-                                            </div><br>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- SUBNAVBAR -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="nav-link" aria-expanded="false">
-                                Componentes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a href="../pages/processors.html">Procesadores</a>
-                                <li><a href="../pages/motherboards.html">Motherboards</a>
-                                <li><a href="../pages/videocards1.html">Tarjetas de vídeo</a>
-                                <li><a href="../pages/RAMs.html">RAMs</a>
-                                <li><a href="../pages/coolers.html">Refrigeración</a>
-                                <li><a href="../pages/monitors.html">Monitores</a>
-                                <li><a href="../pages/SSD.html">SSD/NVME</a>
-                                <li><a href="../pages/HDD.html">HDD</a>
-                                <li><a href="../pages/power-supply.html">Fuentes de poder</a>
-                            </ul>
-                        </li>
-                    </ul>
+                </a>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="exampleModalLabel">Mi cuenta</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                        <form>
+                            <section class="container">
+                                <table class="table khula">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Productos</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                        
+                                    </tbody>
+                                  </table>
+                            </section>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
         </div>
         </nav>
-        </div>
+        </div><br>
     </header><br>
     <main>
         <!-- DESKTOP HARDWARE PRODUCTS -->
@@ -157,7 +103,7 @@
                 <a href="">
                     <p>Gabinetes</p>
                 </a>
-                <a href="">
+                <a category="Monitores" href="">
                     <p>Monitores</p>
                 </a>
                 <a href="">
@@ -185,7 +131,7 @@
             </aside>
             <div class="general-GridChildren"><a href=""><img class="img-s" src="../img/imagenes/MSI1.png"
                         alt="Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz<">
-                    <p class="title">Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz</p>
+                    <p class="title category_item">Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz</p>
                 </a>
                 <p class="price">$60500</p>
                 <button class="btnCompra">
@@ -294,21 +240,6 @@
                 </button>
             </div>
         </section><br>
-        <section class="container">
-            <table class="table khula">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Productos</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Cantidad</th>
-                  </tr>
-                </thead>
-                <tbody class="tbody">
-    
-                </tbody>
-              </table>
-        </section>
         <!-- FOOTER -->
         <footer>
             <div class="grid-Footer">

@@ -194,8 +194,9 @@ font-weight: bold;
 }
 
 .modal-content {
-    width: 23rem;
-    height: 30rem;
+    width: 50rem;
+    height: 10rem;
+    background-color: black;
     animation: slide-in-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     
@@ -798,7 +799,9 @@ margin-left: 5.5rem;
       height: auto;
       width: auto;
   }
-
+.filter {
+  display:none;
+}
 .item {
     color: white;
 }
@@ -921,9 +924,6 @@ margin-left: 5.5rem;
   margin-left: 68rem;
 }
 
-.btn2:hover {
-  background: rgb(8, 8, 8);
-}
 
 .btn4 {
   position:relative;
