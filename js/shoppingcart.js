@@ -91,3 +91,13 @@ $(document).ready(function() {
         $('.product-item[category="'+catProduct+'"]').show();
     });
 });
+
+//CALLBACK FADE
+$("main").prepend('<h3 class="khulaYellow">¡Los mejores precios!</h3><br>');
+$("h3").fadeOut("slow", function(){
+    $("h3").fadeIn(1100);
+}); 
+
+//Animate CSS
+$('.btn2').show().animate({ marginTop: "15px" }, 200 ).animate({ marginTop: "3px" }, 300 );
+
