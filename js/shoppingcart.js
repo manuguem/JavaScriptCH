@@ -60,7 +60,7 @@ function rendershoppingCart() {
         tr.classList.add('itemshoppingCart')
         const Content = `
 
-        <th scope="row">1</th>
+        <th scope="row"></th>
         <td class="table_products">
             <img src=${item.images} alt="">
             <h6 class="title">${item.title}</h6>
