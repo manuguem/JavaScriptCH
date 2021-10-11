@@ -201,25 +201,6 @@ font-weight: bold;
 
     
 }
-.loginButton {
-    background: rgb(255, 255, 1);
-    color: black;
-    border: none; 
-    border-radius: 0.7rem;
-    text-align:center;
-    font-size: small;    
-    line-height: 2rem;
-    font-weight: bold;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.btn-primary {
-    color: rgb(192, 192, 192);
-    filter: grayscale(-0.1%) opacity(0.1);
-    transition: 0.5s all ease;
-    background: none;
-}
 
 .khula {
     color: white;
@@ -270,36 +251,6 @@ footer p {
     font-size: large;
 }
 
-.accountFacebook {
-    background: #3b5998;
-    border-radius: 0.7rem;
-    text-align: center;
-    cursor: pointer;
-    padding: 0 30px;
-    height: auto;
-    font-size: small;    
-    line-height: 2rem;
-    font-weight: bold;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-}
-
-.accountGoogle {
-    background: #db4a39;
-    border-radius: 0.7rem;
-    text-align: center;
-    cursor: pointer;
-    padding: 0 30px;
-    height: auto;
-    font-size: small;    
-    line-height: 2rem;
-    font-weight: bold;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-}
-
 
 .nextPage {
     position: absolute;
@@ -345,64 +296,6 @@ footer p {
   margin-top: -2.5rem;
 }
 
-#btn-msi {
-  position: relative;
-  display: inline-block;
-  border: none;
-  border-radius: 0.3rem;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0 30px;
-  height: auto;
-  font-size: 16px;
-  line-height: 44px;
-  transition: .25s linear;
-  background: #1b1b1b;
-  color: #fff;
-  filter: grayscale(-0.1%) opacity(0.1);
-  transition: 0.5s all ease;
-  margin-top: -2.5rem;
-}
-
-#btn-redragon {
-  position: relative;
-  display: inline-block;
-  border: none;
-  border-radius: 0.3rem;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0 30px;
-  height: auto;
-  font-size: 16px;
-  line-height: 44px;
-  transition: .25s linear;
-  background: #1b1b1b;
-  color: #fff;
-  filter: grayscale(-0.1%) opacity(0.1);
-  transition: 0.5s all ease;
-  margin-top: -2.5rem;
-}
-#btn-asus {
-  position: relative;
-  display: inline-block;
-  border: none;
-  border-radius: 0.3rem;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0 30px;
-  height: auto;
-  font-size: 16px;
-  line-height: 44px;
-  transition: .25s linear;
-  background: #1b1b1b;
-  color: #fff;
-  filter: grayscale(-0.1%) opacity(0.1);
-  transition: 0.5s all ease;
-  margin-top: -2.5rem;
-}
 
 
 .btnCompra:hover {
@@ -481,32 +374,6 @@ footer p {
     flex-basis: auto;
 }
 
-.table {
-}
-
-
-.sectionCircles {
-    background-color: rgb(10, 10, 10);
-}
-
-.sectionCircles  .flexBoxCircles {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(10, 10, 10);
-    padding: 3rem;
-    margin: 0 auto;
-    width: 80rem;
-    align-items: center;
-}
-
-.sectionCircles  .flexBoxCircles .flexchildren2 {
-  text-align: center;
-  font-family: 'Khula', sans-serif;
-  background-color: rgb(236, 235, 235);
-  height: 9rem;
-  width: 8.5rem;
-  border-radius: 100%;
-}
 
 a {
     color: white;
@@ -754,9 +621,6 @@ margin-left: 5.5rem;
     background: #000000;
 }
 
-.videoSize {
-   width: auto;
-}
 
 .backgroundContainer {
     background: rgb(0, 0, 0);
@@ -764,22 +628,6 @@ margin-left: 5.5rem;
     margin-right: 15rem;
 }
 
-
-.owl-carousel {
-    display: none;
-    width: 100%;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    z-index: 1;
-}
-
-.owl-pos-fix {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.owl-carousel.owl-loaded {
-    display: block;
-}
 
 .card {
     border-radius: 0.5rem;
@@ -850,7 +698,7 @@ margin-left: 5.5rem;
 }
 
 .bg-Articles {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(8, 8, 8);
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

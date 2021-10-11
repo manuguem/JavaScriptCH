@@ -34,7 +34,7 @@ function addToshoppingCart(e) {
     // $(".btnCompra").click(function () { 
     //     alert("Tienes en el carrito: "+ itemTitle);
     // });
-    
+
 }
 
 function additemshoppingCart(newItem) {
@@ -74,43 +74,75 @@ function rendershoppingCart() {
         `
         tr.innerHTML = Content;
         tbody.append(tr)
-
+        tr.querySelector('.delete').addEventListener('click', removeItemshoppingCart)
+        tr.querySelector('.input_element').addEventListener('change', addQuantity)
     })
     TotalshoppingCart()
 }
 
-function TotalshoppingCart () {
+function TotalshoppingCart() {
     let Total = 0;
     const itemTotalshopCart = document.querySelector('.itemTotalshopCart')
     shoppingCart.forEach((item) => {
-        const price = Number(item.price.replace("$",''))
-        Total = Total + price*item.quantity
-})
+        const price = Number(item.price.replace("$", ''))
+        Total = Total + price * item.quantity
+    })
 
-itemTotalshopCart.innerHTML = `Total $${Total}`
+    itemTotalshopCart.innerHTML = `Total $${Total}`
 
 }
 
-$(document).ready(function() {
+function removeItemshoppingCart(e) {
+    const buttonDelete = e.target
+    const tr = buttonDelete.closest('.itemshoppingCart')
+    const title = tr.querySelector('.title').textContent;
+    for (let i = 0; i < shoppingCart.length; i++) {
+        if (shoppingCart[i].title.trim() === title.trim()) {
+            shoppingCart.splice(i, 1)
+        }
+    }
+    tr.remove()
+    TotalshoppingCart()
+
+}
+
+//SUMA Y RESTA DESDE EL CARRITO con flechas hacia arriba y abajo
+
+function addQuantity(e) {
+    const addInput = e.target
+    const tr = addInput.closest('.itemshoppingCart')
+    const title = tr.querySelector('.title').textContent;
+    shoppingCart.forEach(item => {
+        if(item.title.trim() === title) {
+            addInput.value < 1 ? (addInput.value = 1) : addInput.value
+            item.quantity = addInput.value;
+            TotalshoppingCart()
+        }
+    })
+}
+
+//Animaciones JS
+
+$(document).ready(function () {
     $('.category_list .category_item[category="all"]').addClass('ct_item-active');
-    
-    $('.category_item .').click(function() {
+
+    $('.category_item .').click(function () {
         var catProduct = $(this).attr('category');
         console.log(catProduct);
 
         $('.category_item .').removeClass('ct_item-active');
         $(this).addClass('ct_item-active');
         $('.product-item').hide();
-        $('.product-item[category="'+catProduct+'"]').show();
+        $('.product-item[category="' + catProduct + '"]').show();
     });
 });
 
 //CALLBACK FADE
 $("main").prepend('<h3 class="khulaYellow">¡Los mejores precios!</h3><br>');
-$("h3").fadeOut("slow", function(){
+$("h3").fadeOut("slow", function () {
     $("h3").fadeIn(1100);
-}); 
+});
 
 //Animate CSS
-$('.btn2').show().animate({ marginTop: "15px" }, 200 ).animate({ marginTop: "3px" }, 300 );
+$('.btn2').show().animate({ marginTop: "15px" }, 200).animate({ marginTop: "3px" }, 300);
 
