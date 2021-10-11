@@ -44,6 +44,7 @@ function additemshoppingCart(newItem) {
             shoppingCart[i].quantity++;
             const inputValue = inputElement[i]
             inputValue.value++;
+            TotalshoppingCart()
             return null;
         }
     }
@@ -67,7 +68,7 @@ function rendershoppingCart() {
         <td class="table_prices">${item.price}</td>
         <td class="table_quantity">
             <input type="number" min="1" value=${item.quantity} class="input_element">
-            <button class="delete btnCompra btn-danger">X</button>
+            <button class="delete btnCompra btn-danget">X</button>
         </td>
 
         `
@@ -75,7 +76,19 @@ function rendershoppingCart() {
         tbody.append(tr)
 
     })
-    
+    TotalshoppingCart()
+}
+
+function TotalshoppingCart () {
+    let Total = 0;
+    const itemTotalshopCart = document.querySelector('.itemTotalshopCart')
+    shoppingCart.forEach((item) => {
+        const price = Number(item.price.replace("$",''))
+        Total = Total + price*item.quantity
+})
+
+itemTotalshopCart.innerHTML = `Total $${Total}`
+
 }
 
 $(document).ready(function() {

@@ -896,7 +896,7 @@ margin-left: 5.5rem;
             animation-iteration-count:infinite;
 }
 
-.btn {
+/* .btn {
     margin-top: 2rem;
     border: none;
     outline: none;
@@ -910,7 +910,7 @@ margin-left: 5.5rem;
     margin-left: 2rem;
     text-decoration: none;
 
-  }
+  } */
 
 .btn2 {
   border: none;
@@ -938,7 +938,7 @@ margin-left: 5.5rem;
     background-image: none;
     font-weight: bold;
   }
-
+/* 
   .btn:before {
     content: "";
     background: linear-gradient(90deg,
@@ -1026,7 +1026,7 @@ margin-left: 5.5rem;
     border-bottom-right-radius: 10px;
     text-decoration: none;
 
-  }
+  } */
 
   @keyframes glowing {
     0% {
