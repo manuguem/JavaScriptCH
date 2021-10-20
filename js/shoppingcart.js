@@ -1,10 +1,41 @@
-const padre = document.getElementById('dad');
-const dad = ["<p class='khulaYellow'>Rango de precio</p>", "$6000 a $10000", "$10000 a $20000", "$20000 a $50000", "$50000 a $100000"];
-for (const rango of dad) {
-    const p = document.createElement('p');
-    p.innerHTML = rango
-    padre.appendChild(p);
-}
+$(document).ready(function(){
+
+	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
+	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
+
+	// FILTRANDO PRODUCTOS  ============================================
+
+	$('.category_item').click(function(){
+		var catProduct = $(this).attr('category');
+		console.log(catProduct);
+
+		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
+		$('.category_item').removeClass('ct_item-active');
+		$(this).addClass('ct_item-active');
+
+		// OCULTANDO PRODUCTOS =========================
+		$('.product-item').css('transform', 'scale(0)');
+		function hideProduct(){
+			$('.product-item').hide();
+		} setTimeout(hideProduct,400);
+
+		// MOSTRANDO PRODUCTOS =========================
+		function showProduct(){
+			$('.product-item[category="'+catProduct+'"]').show();
+			$('.product-item[category="'+catProduct+'"]').css('transform', 'scale(1)');
+		} setTimeout(showProduct,700);
+	});
+
+	// MOSTRANDO TODOS LOS PRODUCTOS =======================
+
+	$('.category_item[category="all"]').click(function(){
+		function showAll(){
+			$('.product-item').show();
+			$('.product-item').css('transform', 'scale(1)');
+		} setTimeout(showAll,700);
+	});
+});
+
 const clickButton = document.querySelectorAll('.btnCompra')
 const tbody = document.querySelector('.tbody')
 let shoppingCart = []
@@ -15,7 +46,7 @@ clickButton.forEach(button => {
 
 function addToshoppingCart(e) {
     const button = e.target
-    const item = button.closest('.general-GridChildren')
+    const item = button.closest('.product-item')
     const itemTitle = item.querySelector('.title').textContent;
     const itemPrices = item.querySelector('.price').textContent;
     const itemImages = item.querySelector('.img-s').src;
@@ -28,6 +59,8 @@ function addToshoppingCart(e) {
 
     }
     additemshoppingCart(newItem)
+    //Animate CSS
+    $('.btn2').show().animate({ marginTop: "-13px" }, 200).animate({ marginTop: "3px" }, 300);
 
     //jQuery CLICK method
 
@@ -46,13 +79,14 @@ function additemshoppingCart(newItem) {
             inputValue.value++;
             TotalshoppingCart()
             return null;
+            
         }
     }
 
     shoppingCart.push(newItem)
     rendershoppingCart()
 }
-
+//RENDER PRODUCTOS
 function rendershoppingCart() {
     tbody.innerHTML = ''
     shoppingCart.map(item => {
@@ -79,7 +113,7 @@ function rendershoppingCart() {
     })
     TotalshoppingCart()
 }
-
+//TOTAL PRODUCTOS
 function TotalshoppingCart() {
     let Total = 0;
     const itemTotalshopCart = document.querySelector('.itemTotalshopCart')
@@ -91,7 +125,7 @@ function TotalshoppingCart() {
     itemTotalshopCart.innerHTML = `Total $${Total}`
 
 }
-
+//ELIMINAR OBJETOS
 function removeItemshoppingCart(e) {
     const buttonDelete = e.target
     const tr = buttonDelete.closest('.itemshoppingCart')
@@ -120,29 +154,3 @@ function addQuantity(e) {
         }
     })
 }
-
-//Animaciones JS
-
-$(document).ready(function () {
-    $('.category_list .category_item[category="all"]').addClass('ct_item-active');
-
-    $('.category_item .').click(function () {
-        var catProduct = $(this).attr('category');
-        console.log(catProduct);
-
-        $('.category_item .').removeClass('ct_item-active');
-        $(this).addClass('ct_item-active');
-        $('.product-item').hide();
-        $('.product-item[category="' + catProduct + '"]').show();
-    });
-});
-
-//CALLBACK FADE
-$("main").prepend('<h3 class="khulaYellow">¡Los mejores precios!</h3><br>');
-$("h3").fadeOut("slow", function () {
-    $("h3").fadeIn(1100);
-});
-
-//Animate CSS
-$('.btn2').show().animate({ marginTop: "15px" }, 200).animate({ marginTop: "3px" }, 300);
-
