@@ -15,13 +15,6 @@
     <meta name="keywords"
         content="PCSTUFF, PC, Hardware, AMD, INTEL, NVIDIA, RADEON, COOLERMASTER, RTX, RX, COOLERS, TARJETA DE VIDEO, FUENTES DE PODER, MOTHERBOARDS">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -84,9 +77,10 @@
                                         <h3 class="itemTotalshopCart">Total: 0</h3>
                                     </div>
                                     <div class="col d-flex justify-content-end">
-                                        <button class="btn btn-success">
+                                        <button class="btn btn-success" onclick="swal1()">
                                             Comprar
                                         </button>
+
                                     </div>
                                 </div><br>
                             </section>
@@ -99,30 +93,31 @@
         </nav>
         </div><br>
     </header><br>
-	<div class="wrap">
-		<div class="store-wrapper">
-			<div class="category_list">
+    <div class="wrap">
+        <div class="store-wrapper">
+            <div class="category_list">
                 <h2 class="khulaYellow">Más vendidos</h2><br>
-                <a href=""class="khulaYellow">Productos</a><br>
+                <a href="#" class="category_item khulaYellow" category="all">Productos</a><br>
                 <a href="#" class="category_item" category="Coolers">Coolers</a><br>
                 <a href="#" class="category_item" category="PcTower">Gabinetes</a><br>
-				<a href="#" class="category_item" category="Monitor">Monitores</a><br>
-				<a href="#" class="category_item" category="RAM">Memorias RAM</a>
+                <a href="#" class="category_item" category="Monitor">Monitores</a><br>
+                <a href="#" class="category_item" category="RAM">Memorias RAM</a>
 
-			</div>
-			<section class="products-list">
-					<div class="card product-item" category="Monitor">
-						<img class="img-s" src="img/imagenes/MSI1.png" alt="Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz">
-						<div class="card-body">
-							<p class="title">Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz</p>
-							<p class="price">$60500</p>
-							<button class="btnCompra">
-								Agregar al carrito
-							</button>
-						</div>
-					  </div>
-				<div class="card product-item" category="Monitor">
-					<img class="img-s" src="img/imagenes/redragon1.png" alt="Monitor Redragon Gamer Jade 27 165hz HDMI 1080p" >
+            </div>
+            <section class="products-list">
+                <div class="card product-item" category="Monitor">
+                    <img class="img-s" src="img/imagenes/MSI1.png" alt="Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz">
+                    <div class="card-body">
+                        <p class="title">Monitor Curvo Msi Optix Mag27c5 Led 27 144 Hz</p>
+                        <p class="price">$60500</p>
+                        <button class="btnCompra">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card product-item" category="Monitor">
+                    <img class="img-s" src="img/imagenes/redragon1.png"
+                        alt="Monitor Redragon Gamer Jade 27 165hz HDMI 1080p">
                     <div class="card-body">
                         <p class="title">Monitor Redragon Gamer Jade 27 165hz HDMI 1080p</p>
                         <p class="price">$60888</p>
@@ -130,9 +125,10 @@
                             Agregar al carrito
                         </button>
                     </div>
-				</div>
-				<div class="card product-item" category="Monitor">
-					<img class="img-s" src="img/imagenes/monitorasus2.png" alt="Monitor Gaming Asus Vg248qg 24 Fhd 0,5ms 165hz G-syn" >
+                </div>
+                <div class="card product-item" category="Monitor">
+                    <img class="img-s" src="img/imagenes/monitorasus2.png"
+                        alt="Monitor Gaming Asus Vg248qg 24 Fhd 0,5ms 165hz G-syn">
                     <div class="card-body">
                         <p class="title">Monitor Gaming Asus Vg248qg 24 Fhd 165hz</p>
                         <p class="price">$65499</p>
@@ -140,9 +136,9 @@
                             Agregar al carrito
                         </button>
                     </div>
-				</div>
-				<div class="card product-item" category="RAM">
-					<img class="img-s" src="img/imagenes/ramviper3.png" alt="DDR4 - 2x16 Gb 2999 Mhz Viper Gaming" >
+                </div>
+                <div class="card product-item" category="RAM">
+                    <img class="img-s" src="img/imagenes/ramviper3.png" alt="DDR4 - 2x16 Gb 2999 Mhz Viper Gaming">
                     <div class="card-body">
                         <p class="title">DDR4 - 2x16 Gb 2999 Mhz Viper Gaming</p>
                         <p class="price">$21990</p>
@@ -150,121 +146,126 @@
                             Agregar al carrito
                         </button>
                     </div>
-				</div>
-				<div class="card product-item" category="RAM">
-					<img class="img-s" src="img/imagenes/ramviper1.png" alt="DDR4 - 2x8 Gb 2999 Mhz Viper Patriot" >
+                </div>
+                <div class="card product-item" category="RAM">
+                    <img class="img-s" src="img/imagenes/ramviper1.png" alt="DDR4 - 2x8 Gb 2999 Mhz Viper Patriot">
                     <div class="card-body">
                         <p class="title category_item">DDR4 - 2x8 Gb 2999 Mhz Viper Patriot</p>
                         <p class="price">$11990</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>			
-                	</div>
-				<div class="card product-item" category="RAM">
-					<img class="img-s" src="img/imagenes/crucial png.png" alt="DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX" >
+                    </div>
+                </div>
+                <div class="card product-item" category="RAM">
+                    <img class="img-s" src="img/imagenes/crucial png.png"
+                        alt="DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX">
                     <div class="card-body">
                         <p class="title">DDR4 - 2x4 Gb 2400 Mhz Crucial Ballistik MAX</p>
                         <p class="price">$9990</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
-				<div class="card product-item" category="Coolers">
-					<img class="img-s" src="img/imagenes/Hyper H411R.png" alt="CoolerMaster Hyper H411R CPU Fan" >
+                    </div>
+                </div>
+                <div class="card product-item" category="Coolers">
+                    <img class="img-s" src="img/imagenes/Hyper H411R.png" alt="CoolerMaster Hyper H411R CPU Fan">
                     <div class="card-body">
                         <p class="title">CoolerMaster Hyper H411R CPU Fan</p>
                         <p class="price">$8990</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
-				<div class="card product-item" category="Coolers">
-					<img class="img-s" src="img/imagenes/corsairfan1.png" alt="Corsair Af 120 Led Air Series RGB Pack x2" >
+                    </div>
+                </div>
+                <div class="card product-item" category="Coolers">
+                    <img class="img-s" src="img/imagenes/corsairfan1.png"
+                        alt="Corsair Af 120 Led Air Series RGB Pack x2">
                     <div class="card-body">
                         <p class="title">Corsair Af 120 Led Air Series RGB Pack x2</p>
                         <p class="price">$17990</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
+                    </div>
+                </div>
                 <div class="card product-item" category="Coolers">
-					<img class="img-s" src="img/imagenes/COOLER MASTER HYPER 212 BLACK EDITION.png" alt="COOLER MASTER HYPER 212 BLACK EDITION" >
+                    <img class="img-s" src="img/imagenes/COOLER MASTER HYPER 212 BLACK EDITION.png"
+                        alt="COOLER MASTER HYPER 212 BLACK EDITION">
                     <div class="card-body">
                         <p class="title">COOLER MASTER HYPER 212 BLACK EDITION</p>
                         <p class="price">$15000</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
+                    </div>
+                </div>
                 <div class="card product-item" category="PcTower">
-					<img class="img-s" src="img/imagenes/corsaircarbide.png" alt="Corsair 4000D Airflow Cabinet (White)" >
+                    <img class="img-s" src="img/imagenes/corsaircarbide.png"
+                        alt="Corsair 4000D Airflow Cabinet (White)">
                     <div class="card-body">
                         <p class="title">Corsair 4000D Airflow Cabinet (White)</p>
                         <p class="price">$15000</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
+                    </div>
+                </div>
                 <div class="card product-item" category="PcTower">
-					<img class="img-s" src="img/imagenes/SPEC-05.png" alt="CORSAIR Carbide Series SPEC-05" >
+                    <img class="img-s" src="img/imagenes/SPEC-05.png" alt="CORSAIR Carbide Series SPEC-05">
                     <div class="card-body">
                         <p class="title">CORSAIR Carbide Series SPEC-05</p>
                         <p class="price">$12000</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
+                    </div>
+                </div>
                 <div class="card product-item" category="PcTower">
-					<img class="img-s" src="img/imagenes/CARBIDE 330R BLACKOUT TITANIUM EDITION.png" alt="CARBIDE 330R BLACKOUT TITANIUM EDITION" >
+                    <img class="img-s" src="img/imagenes/CARBIDE 330R BLACKOUT TITANIUM EDITION.png"
+                        alt="CARBIDE 330R BLACKOUT TITANIUM EDITION">
                     <div class="card-body">
                         <p class="title">CARBIDE 330R BLACKOUT TITANIUM EDITION</p>
                         <p class="price">$18790</p>
                         <button class="btnCompra">
                             Agregar al carrito
                         </button>
-                    </div>	
-				</div>
-			</section>
-		</div>
-	</div>
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logos/PCSTUFF logo.PNG" alt="PCSTUFF logo" class="align-items-lg-start">
-                        <p class="imgtextLogoPosition">PCSTUFF</p>
-                    </a>
+                    </div>
                 </div>
-                <div>
-                    <p>PCSTUFF © 2021 | Todos los derechos reservados.</p>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/"><img src="img/logos/instagram.png" alt="Instagram"></a>
-                    <a href="https://web.whatsapp.com/"><img src="img/logos/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="https://web.telegram.org/"><img src="img/logos/telegrama.png" alt="Telegram"></a>
-                    <a href="https://www.facebook.com/"><img src="img/logos/facebook.png" alt="Facebook"></a>
-                </div>
-            </div>
-        </footer>
+            </section>
         </div>
-        <!-- SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="js/shoppingcart.js"></script>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logos/PCSTUFF logo.PNG" alt="PCSTUFF logo" class="align-items-lg-start">
+                    <p class="imgtextLogoPosition">PCSTUFF</p>
+                </a>
+            </div>
+            <div>
+                <p>PCSTUFF © 2021 | Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/"><img src="img/logos/instagram.png" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="img/logos/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://web.telegram.org/"><img src="img/logos/telegrama.png" alt="Telegram"></a>
+                <a href="https://www.facebook.com/"><img src="img/logos/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/shoppingcart.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/sweetalert.js"></script>
 </body>
 
 </html>

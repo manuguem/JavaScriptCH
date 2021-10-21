@@ -41,7 +41,7 @@ function additemshoppingCart(newItem) {
             inputValue.value++;
             TotalshoppingCart()
             return null;
-            
+
         }
     }
 
@@ -85,6 +85,7 @@ function TotalshoppingCart() {
     })
 
     itemTotalshopCart.innerHTML = `Total $${Total}`
+    addLocalStorage()
 
 }
 //ELIMINAR OBJETOS
@@ -109,7 +110,7 @@ function addQuantity(e) {
     const tr = addInput.closest('.itemshoppingCart')
     const title = tr.querySelector('.title').textContent;
     shoppingCart.forEach(item => {
-        if(item.title.trim() === title) {
+        if (item.title.trim() === title) {
             addInput.value < 1 ? (addInput.value = 1) : addInput.value
             item.quantity = addInput.value;
             TotalshoppingCart()
@@ -117,41 +118,14 @@ function addQuantity(e) {
     })
 }
 
+function addLocalStorage() {
+    localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart))
+}
 
-$(document).ready(function(){
-
-	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
-	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
-
-	// FILTRANDO PRODUCTOS  ============================================
-
-	$('.category_item').click(function(){
-		var catProduct = $(this).attr('category');
-		console.log(catProduct);
-
-		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
-		$('.category_item').removeClass('ct_item-active');
-		$(this).addClass('ct_item-active');
-
-		// OCULTANDO PRODUCTOS =========================
-		$('.product-item').css('transform', 'scale(0)');
-		function hideProduct(){
-			$('.product-item').hide();
-		} setTimeout(hideProduct,400);
-
-		// MOSTRANDO PRODUCTOS =========================
-		function showProduct(){
-			$('.product-item[category="'+catProduct+'"]').show();
-			$('.product-item[category="'+catProduct+'"]').css('transform', 'scale(1)');
-		} setTimeout(showProduct,700);
-	});
-
-	// MOSTRANDO TODOS LOS PRODUCTOS =======================
-
-	$('.category_item[category="all"]').click(function(){
-		function showAll(){
-			$('.product-item').show();
-			$('.product-item').css('transform', 'scale(1)');
-		} setTimeout(showAll,700);
-	});
-});
+window.onload = function () {
+    const storage = JSON.parse(localStorage.getItem('shoppingCart'));
+    if (storage) {
+        shoppingCart = storage;
+        rendershoppingCart()
+    }
+}

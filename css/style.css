@@ -51,8 +51,6 @@ input {
 }
 
 .ct_item-active{
-  background: rgb(20, 20, 20);
-  border-radius: 1rem;
   text-align: center;
 }
 
@@ -329,48 +327,6 @@ a:hover {
     color: white;
 }
 
-nav ul{
-    list-style:none;
-}
-
-nav ul li{
-    margin: 0 2%;
-    display: inline-block;
-}
-
-div ul li{
-    margin: 0 1.1rem;
-    display: inline-block;
-}
-
-nav ul ul {
-    position:fixed;
-    display: none;
-    
-
-}
-
-nav ul li:hover ul {
-    display: inline-block;
-    background-color: rgb(8, 8, 8);
-    padding: 22px 0;
-    margin: auto;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-
-}
-
-nav ul ul li {
-    display:block;
-    justify-content:stretch;
-
-}
-
-nav ul li ul li {
-    display: block;
-
-}
-
 .container {
     color: white;
 }
@@ -492,6 +448,13 @@ nav ul li ul li {
 		width: 100%;
 	}
 
+  .form-control4 {
+    display: none;
+  }
+
+  .btn4 {
+    display: none;
+  }
 	.category_list{
 		flex-direction: row;
 		justify-content: space-between;
