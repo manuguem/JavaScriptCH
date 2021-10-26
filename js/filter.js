@@ -14,13 +14,13 @@ $(document).ready(function () {
         $('.product-item').css('transform', 'scale(0)');
         function hideProduct() {
             $('.product-item').hide();
-        } setTimeout(hideProduct, 400);
+        } setTimeout(hideProduct, 80);
 
         // MUESTRA PRODUCTOS =========================
         function showProduct() {
             $('.product-item[category="' + catProduct + '"]').show();
             $('.product-item[category="' + catProduct + '"]').css('transform', 'scale(1)');
-        } setTimeout(showProduct, 700);
+        } setTimeout(showProduct, 80);
     });
 
     // MUESTRA TODOS LOS PRODUCTOS =======================
@@ -29,6 +29,6 @@ $(document).ready(function () {
         function showAll() {
             $('.product-item').show();
             $('.product-item').css('transform', 'scale(1)');
-        } setTimeout(showAll, 700);
+        } setTimeout(showAll, 80);
     });
 });
